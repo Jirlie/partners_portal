@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "autoname": "field:expertise_name",
+ "creation": "2024-09-19 13:51:05.575809",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "expertise_name",
+  "item"
+ ],
+ "fields": [
+  {
+   "fieldname": "expertise_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Expertise Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-01 09:24:26.366305",
+ "modified_by": "Administrator",
+ "module": "Partners Portal",
+ "name": "Expertise",
+ "name_case": "Title Case",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "expertise_name"
+}

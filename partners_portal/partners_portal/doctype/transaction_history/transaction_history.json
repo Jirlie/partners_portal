@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-04 12:11:41.627755",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "transaction_type",
+  "amount",
+  "transaction_date",
+  "reference",
+  "is_locked",
+  "release_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "transaction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Transaction Type",
+   "options": "Deposit\nDeduction\nRelease",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0.00",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Reference",
+   "options": "Purchase Receipt",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_locked",
+   "fieldtype": "Data",
+   "label": "is_locked",
+   "read_only": 1
+  },
+  {
+   "fieldname": "release_date",
+   "fieldtype": "Date",
+   "label": "release_date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-08 12:34:42.713911",
+ "modified_by": "Administrator",
+ "module": "Partners Portal",
+ "name": "Transaction History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
