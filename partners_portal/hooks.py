@@ -119,11 +119,11 @@ app_license = "MIT"
 doc_events = {
     "Supplier": {
         "after_insert": "partners_portal.partners_portal.web_form.supplier_registration.supplier_registration.after_insert_supplier",
-        "on_update": "erpnext.buying.doctype.supplier.supplier.enable_user_on_approval"
+  "on_update": "partners_portal.partners_portal.custom_events.supplier.enable_user_on_approval"
     },
     "Task": {
-        "on_update": "erpnext.projects.doctype.task.task.on_update_task",
-        "after_insert": "erpnext.projects.doctype.task.task.calculate_task_cost_based_on_expertise"
+        "on_update": "partners_portal.partners_portal.custom_events.task.on_update_task",
+        "after_insert": "partners_portal.partners_portal.custom_events.task.calculate_task_cost_based_on_expertise"
     },
     #  "Supplier Wallet": {
     #      'on_update':"partners_portal.partners_portal.doctype.supplier_wallet.supplier_wallet.create_withdrawal_request"
